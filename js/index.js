@@ -39,6 +39,10 @@ cellElements.forEach(cell=>{
         if(winnerCheck(currentplayer)){
             console.log(currentplayer + " WINNER");
             winner = true;
+            addWinnercolor();
+            // if(winner){
+            //     cell.classList.add("color");
+            // }
             result_text.innerHTML = currentplayer + " win the game"; 
         }
         else if(isDraw()){
@@ -50,6 +54,12 @@ cellElements.forEach(cell=>{
     }    
     }
 });
+
+function addWinnercolor(){
+    console.log("print_color")
+    //const WINNING_CONDITIONS = WINNING_CONDITIONS.value();
+    console.log("WINNING_CONDITIONS");
+}
 
 function winnerCheck(currentplayer){
      return WINNING_CONDITIONS.some(condition=>{

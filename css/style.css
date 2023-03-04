@@ -61,3 +61,21 @@ body{
 .disabled{
     pointer-events: none;
 }
+.color{
+    background-color: aqua;
+}
+.cell:hover{
+    background-color: palevioletred;
+}
+.cell.O{
+    color: purple;
+}
+.cell.X{
+    color: rgb(42, 159, 145);
+}
+.result{
+    margin-top: 20px;
+}
+.result_text{
+    text-align: center;
+}
